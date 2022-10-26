@@ -23,6 +23,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         console.log('Handle Error Message', error);
       }}>
       <Component {...pageProps} />
+  
     </WalletProvider>
   </ChakraProvider>
 }

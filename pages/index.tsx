@@ -4,6 +4,8 @@ import styles from '../styles/Home.module.css'
 import WalletConnect from '../Components/WalletConnect'
 import { useWallet } from "@manahippo/aptos-wallet-adapter"
 import Disperse from '../Components/Disprese'
+import { Textarea } from '@chakra-ui/react'
+import AddressInput from '../Components/AddressInput'
 const Home: NextPage = () => {
   const { wallet } = useWallet()
   return (
@@ -21,7 +23,12 @@ const Home: NextPage = () => {
       </div>
 
       <main className={styles.main}>
-        <Disperse />
+        {/* <Disperse /> */}
+        <div>
+          recipients and amounts
+          enter one address and amount in Aptos on each line. supports any format.
+        </div>
+        <AddressInput />
       </main>
     </div>
   )

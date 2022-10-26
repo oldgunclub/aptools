@@ -34,6 +34,7 @@ function Disperse() {
                         [100000000, 200000000, 300000000]
                     ]
                 };
+                
 
                 console.log(payload)
                 const tx = await signAndSubmitTransaction(payload, txOptions);
